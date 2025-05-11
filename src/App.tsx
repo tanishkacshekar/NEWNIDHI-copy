@@ -15,6 +15,8 @@ const Services = lazy(() => import('./pages/Services'));
 const Contact = lazy(() => import('./pages/Contact'));
 const EligibilityChecker = lazy(() => import('./pages/EligibilityChecker'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));
+const LoanComparison = lazy(() => import('./pages/LoanComparison'));
+const BranchLocator = lazy(() => import('./pages/BranchLocator'));
 
 function App() {
   return (
@@ -32,10 +34,14 @@ function App() {
                 <Route path="/services" element={<Services />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/eligibility" element={<EligibilityChecker />} />
+                <Route path="/loans" element={<LoanComparison />} />
+                <Route path="/branches" element={<BranchLocator />} />
                 <Route path="/dashboard" element={
                   <ProtectedRoute>
                     <Dashboard />
-                  </ProtectedRoute>
+                  </Protecte
+
+dRoute>
                 } />
               </Routes>
             </Suspense>
